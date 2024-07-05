@@ -1,0 +1,129 @@
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.primera-seccion{
+    width: 100vw;
+    background-color: var(--bg-color);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo-secunadrio{
+    width: 100;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: var(--ff-text);
+    font-size: 24px;
+    font-weight: 700px;
+    color: #ffffff;
+    padding:  0px 20px 20px 24px;
+    gap: 15px;
+
+}
+
+img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 40vh;
+
+
+}
+
+.h2{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-text);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 100;
+
+}
+
+
+.check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding:  0px 20px 20px 24px;
+    color: #ffffff;
+    font-family: var(--ff-text);
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+}
+
+.check .text1 .text2 .text3 .text4{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-family: var(--ff-text);
+    font-size: 16px;
+    color: var(--text-color);
+
+}
+
+.card-container-botton{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: inherit;
+    margin-bottom: 24px;
+    padding: 32;
+    background-color: var(--box-color);
+    max-width: 200px;
+
+
+}
+
+.card-container-botton .nombre .text{
+    display: inline-block;
+    justify-content: center;
+    width: 224px;
+    border: none;
+    
+}
+
+.card-container-botton .nombre{
+    height: auto;
+    max-width: 100%;
+}
+
+.text{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+font-family: var(--ff-text);
+    font-weight: 100%;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.chevron{
+    display: flex;
+    flex-direction: column-reverse;
+    color: #ffffff;
+    background-color: var(--box-color);
+    
+    font-size: 100%;
+    border-radius: none;
+    right: 70px;
+}
+

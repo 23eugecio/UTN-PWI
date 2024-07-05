@@ -1,0 +1,41 @@
+/*hoja de estilo en cascada*/
+/*este es el selector de elemento*/
+.button{
+    color: #c13109;
+}
+/*el selector de clase*/
+.especial{ color: aqua;
+}
+
+.hola{
+    color: #ed1ae3;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-display: center;
+}
+.button{
+    color: blue;
+}
+
+.especial{
+    color: #c13109;
+}
+.cancelar{
+    color: chartreuse;
+}
+.btn-super-especial{
+    color: chartreuse;
+}
+/*selestor universal*/
+*{
+    color: black;
+}
+/*selector universal*/
+*{
+    color: black;
+}
+/*selector universal*/
+*{
+
+}

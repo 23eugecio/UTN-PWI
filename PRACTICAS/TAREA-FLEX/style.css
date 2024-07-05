@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    color: #3e1e9e;
+
+}
+
+.review-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    row-gap: 50px; 
+
+}
+
+.review-card-top{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 48px 32px 48px 32px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #301c6a4e ;
+    justify-content: center;
+
+}
+
+.review-card-top .icon-top{
+    color:#673DE6;
+    font-size: 25px;
+
+}
+
+.texto1{
+    padding-top: 15%;
+    color:#2F3195;
+    font-size: 14px;
+    padding: 18px 0px 0px;
+    line-height: 24px;
+
+}
+
+.review-card-text-botton{
+    padding-top: 12%;
+
+}
+
+.review-card-text-botton .imagen{
+    width: 64px;
+    margin: 0px 11px 0px 0px;
+
+}
+
+.body-1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2F1C6A;
+
+}
+
+.body-2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30%;
+    margin-right: 10px;
+    margin-left: 70%;
+    font-size: 10px;
+    color: #2F1C6A;
+
+}
+
+.container:nth-child(1){
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 48px 32px 48px 32px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #301c6a4e ;
+    justify-content: center;
+
+}
+.container1:nth-child(2){
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 48px 32px 48px 32px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #301c6a4e ;
+    justify-content: center;
+}
+.container1:nth-child(3){
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 48px 32px 48px 32px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #301c6a4e ;
+    justify-content: center;
+}

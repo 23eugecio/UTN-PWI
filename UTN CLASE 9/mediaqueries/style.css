@@ -1,0 +1,39 @@
+/* Mobible First */
+
+/* Desktop First */
+
+
+/* ELIJO MOBIBLE FIRST */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hijo{
+    width: 80vw;
+    height: 200px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+/* mediaqueries abajo de todo deben tener la misma especificidad al elemente a los estilos previos del mismo elemento */
+
+/* Cuando el ancho de mi pantalla sea MAYOR a 1000px */
+@media screen and (min-width: 1000px){
+    .padre{
+        background-color: aqua;
+    }
+    .padre .hijo{
+        background-color: #105592;
+    }
+}
