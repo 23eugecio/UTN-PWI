@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Chats from './Components/Contenedor/Chats.jsx' 
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+function App ()  {
+
+const ChatList= [
+    {
+      author: 'pepe',
+      content: 'Hola?',
+      fecha: 'ayer a 15:34',
+      estado: 'visto',
+      id: 1
+    },
+    {
+      author: 'yo',
+      content: 'Sos real OMG',
+      fecha: 'ayer a 15:35',
+      estado: 'visto',
+      id: 2
+    },
+    {
+      author: 'pepe',
+      content: 'Obviamente, acaso lo dudaste?',
+      fecha: 'ayer a 15:36',
+      estado: 'visto',
+      id: 3
+    },
+    {
+      author: 'yo',
+      content: 'Jamas.',
+      fecha: 'ayer a 15:37',
+      estado: 'entregado',
+      id: 4
+    },
+  ]
+
+return ( 
+<chats mensajes={mensajes}/>
+)
 }
+
+
 
 export default App
