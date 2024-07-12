@@ -1,21 +1,22 @@
-import React from 'react'
+import React from 'react';
 import './Color.css'
 
 const Color = (props) => {
-    const colores/*array string*/ = props.colors
+const colores = props.colors
     return (
-        <div className="Color">
-                {colores.map((color/* string */, likes /* number */, index /* number */) => {
+    <div className="colors">
+                {colores.map((color, index) => {
+                    console.log(color)
                     return (
 
+                        <div className="color" style={{backgroundColor: color}} key={color + index} >
+                            <span className='bi bi-heart'></span>{index}
+                        </div>
 
-                            <div className="color" style={{background: color}} key={color + index}>
-                                <span className='bi bi-heart'></span>{index}
-                            </div>
                     )
                 })
                 }
-                </div>
+    </div>
     )
 }
 

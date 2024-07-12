@@ -1,12 +1,12 @@
 import React from 'react'
 
-import ColorsContainer from '../ColorsContainer/ColorsContainer'
-import './App.jsx'
+import ColorsContainer from './Components/ColorsContainer/ColorsContainer'
+
 
 
 function App() {
 const cartas_colores = [
-  {
+  { 
     color: ['#219C19', '#FFF455', '#FFC700', 'EE4E4E'],
     likes: 886,
     time: '2 weeks',
@@ -33,5 +33,11 @@ const cartas_colores = [
 
 ]
 
+  return (
+    <>
+      <ColorsContainer cartas_colores={cartas_colores}/>
+    </>
+  )
+
 }
-export default Cartas_colores 
+export default App
