@@ -8,7 +8,6 @@ const ColorsContainer = ({cartas_colores/* array */}) => {
     return (
         <div className='ColorsCardsContainer'>
             {cartas_colores.map((carta_color) => {
-                console.log(carta_color)
                 return (
                     <CardColor
                         key={carta_color.id}/* number */

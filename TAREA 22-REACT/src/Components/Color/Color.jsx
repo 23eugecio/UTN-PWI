@@ -2,11 +2,10 @@ import React from 'react';
 import './Color.css'
 
 const Color = (props) => {
-const colores = props.colors
+    const colores = props.colores
     return (
     <div className="colors">
                 {colores.map((color, index) => {
-                    console.log(color)
                     return (
 
                         <div className="color" style={{backgroundColor: color}} key={color + index} >
