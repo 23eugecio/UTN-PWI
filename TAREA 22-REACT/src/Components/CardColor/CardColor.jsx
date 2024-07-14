@@ -6,15 +6,16 @@ import Color from '../Color/Color'
 const CardColor  = ({colores, time, likes}) => {
 
     return (
-        <div className='colors-cards'>
+        <div className='color-card'>
             <div className='color'>
-                <Color color={colores}/>
+                <Color colores={colores}/>
             </div>
             <div className="card-controls">
-                <button className='btn-like'>
-                    <i className='bi bi-heart'></i>
+                <button className='btn-like'></button>
+                    <span className='like'>
+                        <i className='bi bi-heart'></i>
+                        </span>
                     {likes}
-                </button>
                 <span className="time">
                     {time}
                 </span>

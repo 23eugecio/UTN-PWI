@@ -1,0 +1,56 @@
+.mensaje {
+    width: 60%;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.mensaje .contenido {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.mensaje .autor {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.mensaje .fecha,
+.mensaje .estado {
+    font-size: 11px;
+    color: #888;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.mensaje .estado{
+    bottom: 0;
+    right: 5px;
+    margin-left: 8px;
+}
+
+.mensaje.mensaje-izquierda{
+    background-color: #e7e5ee;
+    float: left;
+    border-bottom-left-radius: 0px;
+}
+
+.mensaje.mensaje-derecha{
+    background-color: #76daab;
+    float: right;
+    border-bottom-right-radius: 0px;
+}
+
+.estado.estado-visto {
+    color: #2ebee2e9;
+}
+
+.estado.estado-entregado,
+.estado.estado-no-entregado{
+    color: #797977;
+}

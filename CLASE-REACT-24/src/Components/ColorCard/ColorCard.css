@@ -18,7 +18,7 @@
     align-items: end;
 }
 .color-card .colors .color span{
-    color: #e6e6e681;
+    color: #E6E6E6;
     background-color: rgba(0, 0, 0, 0.295);
     padding: 5px;
     width: 80px;
@@ -69,12 +69,11 @@
 }
 
 .color-card .color-card-controls .btn-like:hover{
-    background-color: #ecece827;
-    justify-content: right;
+    background-color: rgba(236, 236, 232, 0.153);
 }
 
 
 .color-card .color-card-controls .update{
     color: var(--secondary-text-color);
-    font-size: 10px;
+    font-size: 14px;
 }

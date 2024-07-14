@@ -7,13 +7,13 @@ import ColorsContainer from './Components/ColorsContainer/ColorsContainer'
 function App() {
 const cartas_colores = [
   { 
-    color: ['#219C19', '#FFF455', '#FFC700', 'EE4E4E'],
+    color: ['#FF7F3E', '#FFF455', '#FFC700', '#EE4E4E'],
     likes: 886,
     time: '2 weeks',
     id: 1,
   },
   {
-    color: ['#FFF5E1', '#FF6969', '#C80036', '#OC1844'],
+    color: ['#FFF5E1', '#FF6969', '#C80036', '#0C1844'],
     likes: 1550,
     time: '2 weeks',
     id: 2,

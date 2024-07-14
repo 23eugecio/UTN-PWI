@@ -11,7 +11,7 @@ const ColorsContainer = ({cartas_colores/* array */}) => {
                 return (
                     <CardColor
                         key={carta_color.id}/* number */
-                        Colores={carta_color.color}/* string */
+                        colores={carta_color.color}/* string */
                         likes={carta_color.likes}/* number */
                         time={carta_color.time}/* string */
                     />

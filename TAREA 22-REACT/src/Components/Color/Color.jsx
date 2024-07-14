@@ -9,7 +9,7 @@ const Color = (props) => {
                     return (
 
                         <div className="color" style={{backgroundColor: color}} key={color + index} >
-                            <span className='bi bi-heart'></span>{index}
+                            <span className='color-text'>{color}</span>{index}
                         </div>
 
                     )

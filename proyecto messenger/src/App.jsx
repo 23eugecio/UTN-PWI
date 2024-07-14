@@ -1,10 +1,11 @@
 import React from 'react'
-import Chats from './Components/Contenedor/Chats.jsx' 
+import Chats from './Components/ContenedorChat/ContenedorChat.jsx'
+import '../global.css'
 
 
-function App ()  {
+const App = () =>  {
 
-const ChatList= [
+  const mensajes= [
     {
       author: 'pepe',
       content: 'Hola?',
@@ -35,11 +36,11 @@ const ChatList= [
     },
   ]
 
+
 return ( 
-<chats mensajes={mensajes}/>
+<Chats mensajes={mensajes}/>
 )
 }
-
 
 
 export default App

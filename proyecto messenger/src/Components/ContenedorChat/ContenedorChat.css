@@ -1,0 +1,85 @@
+.pantalla-principal{
+    background-image: url(../assets/fondowhatsclaro.jpg);
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.informacion-de-contacto{
+    background-color: #2151b9;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.foto-perfil{
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.informacion-contacto .iconos{
+    margin-left: 160px;
+}
+
+.informacion-contacto i{
+    font-size: 22px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.informacion-contacto .nombre-contacto{
+    color: #fff;
+    font-size: 20px ;
+    margin-left: 10px;
+}
+
+.mensajes-en-bloque{
+    height: 510px;
+    overflow-y: auto;
+    padding: 15px 20px 70px;
+}
+
+.escribir-mensaje{
+    background-color: #cccccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.escribir-mensaje textarea{
+    background-color: #F2EBFB;
+    width: 380px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.escribir-mensaje textarea::placeholder{
+    color: #090909;
+}
+
+.escribir-mensaje i{
+    font-size: 24px;
+    color: #2a2a2a;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.pantalla-principal .icono-abajo{
+    margin-left: 10px;
+    font-size: 22px;
+    color: #2b2929;
+}
+
+.pantalla-principal .icono-abajo-der{
+    margin-right: 10px;
+    font-size: 22px;
+    color: #2b2929;
+}
