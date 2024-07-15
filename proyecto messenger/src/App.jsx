@@ -1,11 +1,10 @@
 import React from 'react'
-import Chats from './Components/ContenedorChat/ContenedorChat.jsx'
-import '../global.css'
+import ContenedorMensajes from './Components/ContenedorMensajes/ContenedorMensajes'
+import './Components/Mensaje/Mensaje.css'
+import './Components/global.css'
 
-
-const App = () =>  {
-
-  const mensajes= [
+const App = () => {
+  const mensajes = [
     {
       author: 'pepe',
       content: 'Hola?',
@@ -36,11 +35,9 @@ const App = () =>  {
     },
   ]
 
-
-return ( 
-<Chats mensajes={mensajes}/>
-)
+  return (
+    <ContenedorMensajes mensajes={mensajes} />
+  )
 }
-
 
 export default App

@@ -1,0 +1,80 @@
+.pantalla-principal {
+    background-image: url(whatsappblack.png);
+    background-size: cover;
+    height: 600px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.informacion-de-contacto {
+    background-color: #19823c;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.foto-perfil {
+    background-image: url(images.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px; 
+    object-fit: cover; 
+}
+
+.informacion-de-contacto .iconos {
+    margin-left: auto;
+}
+
+.informacion-de-contacto i {
+    font-size: 22px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.informacion-de-contacto .nombre-contacto {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.mensajes-en-bloque {
+    height: 510px;
+    overflow-y: auto;
+    padding: 15px 20px 70px; 
+    display: block;
+}
+
+.escribir-mensaje {
+    background-color: #F2EBFB;
+    width: 380px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.escribir-mensaje input[type="text"] {
+    flex: 1; 
+    margin-left: 10px; 
+    border: none;
+    outline: none;
+}
+
+.escribir-mensaje i {
+    font-size: 24px;
+    color: #2a2a2a;
+    margin-left: 15px;
+}
+
+.iconos-abajo-der {
+    margin-right: 10px;
+    font-size: 22px;
+    color: #2b2929;
+}

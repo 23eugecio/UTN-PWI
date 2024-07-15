@@ -1,38 +1,34 @@
 import React from 'react'
-import photouser from '../assets/userpic.webp'
+import PropTypes from 'prop-types'
 import './mensaje.css'
 import '../global.css'
 
-
-
-const Mensajes = ({author, content, fecha, estado,id}) => {
-
+const Mensajes = ({ author, content, date, status }) => {
+    const mensajeClass = author === 'yo' ? 'mensaje-derecha' : 'mensaje-izquierda';
     return (
-        <div className='contenedor-chat'>
-            <div className='informacion-contacto'>
-                <img src={photouser} alt='usuario' className='fotos-perfil'></img>
-                <textarea className='nombre'>{author}</textarea>yo
-                <div className='iconos'>
-                    <i class="bi bi-camera-video"></i>
-                    <i class="bi bi-telephone"></i>
-                    <i class="bi bi-three-dots-vertical"></i>
-                </div>
+        <div className={`mensaje ${mensajeClass}`}>
+            <div className='author'>
+                {author}
             </div>
-            <div className='mensaje-en-bloque'>
-                <p className='autor'>{author}</p>
-                <p className='mensaje'>{content}</p>
-                <p className='fecha'>{fecha}</p>
-                <p className='estado'>{estado}</p>
+            <div className='content'>
+                {content}
             </div>
-            <div className='enviar-mensaje'>
-                <i class="bi bi-emoji-smile"></i>
-                <input type="text" placeholder='Mensaje' />
-                <i class="bi bi-paperclip"></i>
-                <i class="bi bi-mic-fill"></i>
-                <i class="bi bi-send"></i>
+            <div className='date-status'>
+                {date} <span className={status === 'visto' ? 'status-visto' : ''}>{status}</span>
             </div>
         </div>
-    )
+    );
 }
 
-export default Mensajes
+Mensajes.propTypes = {
+    author: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired
+};
+
+Mensajes.defaultProps = {
+    status: 'sent'
+};
+
+export default Mensajes;
