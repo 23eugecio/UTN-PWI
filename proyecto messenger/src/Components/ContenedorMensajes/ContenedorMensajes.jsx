@@ -14,8 +14,10 @@ const ContenedorMensajes = ({ mensajes }) => {
 
     return (
         <div className='pantalla-principal'>
+            <div className='contenedor-mensajes'>
+                <img className='fondo' src="./whatsappblack.png" alt=''/>
             <div className='informacion-de-contacto'>
-                <img src={photouser} alt='usuario' className='foto-perfil' />
+                <img cllassName='foto-perfil' src="./images.png" alt=''/>
                 <div className='nombre-contacto'>Pepe</div>
                 <div className='iconos'>
                     <i className="bi bi-camera-video"></i>
@@ -23,6 +25,7 @@ const ContenedorMensajes = ({ mensajes }) => {
                     <i className="bi bi-three-dots-vertical"></i>
                 </div>
             </div>
+    </div>
             <div className='mensajes-en-bloque'>
                 {mensajes.map(({ author, content, fecha, estado, id }) => (
                     <Chats
