@@ -1,43 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ContenedorMensajes from './Components/ContenedorMensajes/ContenedorMensajes'
 import './Components/Mensaje/Mensaje.css'
-import './Components/global.css'
+import './Components/ContenedorMensajes/ContenedorMensajes.css'
+import data from './Data/data.js'
+import ContactList from './Components/ContactList/ContactList.jsx'
+import './Components/ContactList/ContactList.css'
 
 const App = () => {
-  const mensajes = [
-    {
-      author: 'pepe',
-      content: 'Hola?',
-      fecha: 'ayer a 15:34',
-      estado: 'visto',
-      id: 1
-    },
-    {
-      author: 'yo',
-      content: 'Sos real OMG',
-      fecha: 'ayer a 15:35',
-      estado: 'visto',
-      id: 2
-    },
-    {
-      author: 'pepe',
-      content: 'Obviamente, acaso lo dudaste?',
-      fecha: 'ayer a 15:36',
-      estado: 'visto',
-      id: 3
-    },
-    {
-      author: 'yo',
-      content: 'Jamas.',
-      fecha: 'ayer a 15:37',
-      estado: 'entregado',
-      id: 4
-    },
-  ]
 
-  return (
-    <ContenedorMensajes mensajes={mensajes} />
-  )
+    const [contacto, setContacto] = useState({data})
+    const [formMensajes, setFormMensajes] = useState({ content: '' })
+    const handleInputChange = (event) => {
+        setFormMensajes({ ...formMensajes, [event.target.name]: event.target.value })
+    }
+    return (
+
+        <div>
+        {/* <ContactList contacts={data}></ContactList> */}
+        <ContenedorMensajes mensajes={data} />
+        </div>
+    )
 }
-
 export default App

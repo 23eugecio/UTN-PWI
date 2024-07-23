@@ -1,68 +1,77 @@
 .pantalla-principal {
-    background-image: url(src/Components/assets/imagenes/whatsappblack.png);
-    background-size: cover;
+    background-image: url(./assets/imagenes/whatsappblack.png);
+    background-position: center;
     height: 600px;
     width: 420px;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+
 }
+
 
 .informacion-de-contacto {
-    background-color: #0f5929;
-    padding: 12px 15px;
+    background-color: #4C3BCF;
+    height: 100px;
+    width: 100%;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
+    border-radius: 15px 15px 0 0;
 }
-
 .foto-perfil {
-    background-image: url(images.png);
+    background-image: url(./assets/imagenes/canario.webp);
+    object-fit: cover;
     background-size: cover;
+    background-position: center;
     width: 40px;
     height: 40px;
-    border-radius: 100%;
-    margin-left: 10px; 
-    object-fit: cover; 
+    border-radius: 100%; 
     border: 2px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .informacion-de-contacto .iconos {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.informacion-de-contacto i {
+.informacion-de-contacto .iconos i {    
+    color: #fff;                
+    font-size: 20px;
+}
+
+.informacion-de-contacto .foto-perfil {
+    display: flex;  
+    align-items: center;
+    gap: 15px;
+}
+
+
+.informacion-de-contacto {
     font-size: 22px;
     color: #fff;
-    margin-left: 15px;
+
 }
 
 .informacion-de-contacto .nombre-contacto {
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 10px;
 }
 
-.mensajes-en-bloque {
-    height: 500px;
-    overflow-y: auto;
-    padding: 15px 20px 70px; 
-    display: block;
-    padding-bottom: 70px;
-}
 
-.escribir-mensaje {
-    background-color: #F2EBFB;
-    width: 380px;
-    height: 40px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    outline: none;
+.escribir-mensaje {      
     display: flex;
     align-items: center;
-    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    width: auto;
+    height: 37.6px;
+    margin: 0px 10px 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 14px;
 }
 
 .escribir-mensaje input[type="text"] {
@@ -70,7 +79,7 @@
     margin-left: 10px; 
     border: none;
     outline: none;
-    padding-bottom: 50px;
+    padding: 0px 10px 0px 0px;
 }
 
 .escribir-mensaje i {
@@ -80,53 +89,31 @@
 }
 
 .iconos-abajo-der {
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
     font-size: 22px;
     color: #2b2929;
 }
 
-.mensaje {
-    width: 60%;
-    margin-bottom: 12px;
-    padding: 8px 10px;
-    border-radius: 10px;
-    clear: both;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
+
+.mensajes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
 }
 
-.mensaje-derecha {
-    background-color: #76daab;
-    float: right;
-    border-bottom-right-radius: 0px;
+.send{
+    display: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 10px;
+    color: aqua;
+    border: none;
+    outline: none;
+    background-color: none;
+    border-radius: none;
 }
-
-.mensaje-izquierda {
-    background-color: #e7e5ee;
-    float: left;
-    border-bottom-left-radius: 0px;
-}
-
-.author {
-    font-weight: 600;
-    font-size: 12px;
-}
-
-.content {
-    font-size: 13px;
-    margin-bottom: 8px;
-}
-
-.date-status {
-    font-size: 11px;
-    color: #888;
-    position: absolute;
-    bottom: 0;
-    right: 20px;
-}
-
-.status-visto {
-    color: #2ebee2e9;
-}
-

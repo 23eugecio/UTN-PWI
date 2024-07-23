@@ -1,44 +1,39 @@
 .mensaje {
-    width: 60%;
-    margin-bottom: 12px;
-    padding: 8px 10px;
-    border-radius: 10px;
-    clear: both;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
 }
 
-.mensaje-derecha {
-    background-color: #76daab;
-    float: right;
-    border-bottom-right-radius: 0px;
+.yo {
+    background-color: #3DC2EC;
+    color: #fff;
+    align-self: flex-start;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
 }
 
-.mensaje-izquierda {
-    background-color: #e7e5ee;
-    float: left;
-    border-bottom-left-radius: 0px;
+.otro {
+    background-color: #536493;
+    align-self: flex-end;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
 }
 
 .author {
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: bold;
 }
 
 .content {
-    font-size: 13px;
-    margin-bottom: 8px;
+    margin: 5px 0;
 }
 
 .date-status {
-    font-size: 11px;
+    font-size: 0.8em;
     color: #888;
-    position: absolute;
-    bottom: 0;
-    right: 20px;
 }
 
 .status-visto {
-    color: #2ebee2e9;
+    color: rgb(2, 195, 221);
 }

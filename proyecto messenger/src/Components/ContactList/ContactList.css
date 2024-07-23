@@ -1,0 +1,43 @@
+.contenedor-contactos {
+    background-image: url(./assets/imagenes/whatsappblack.png);
+    background-position: center;
+    height: 600px;
+    width: 420px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.contenedor {
+    background-color: #4C3BCF;
+    height: 100px;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    margin-left: auto;  
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+
+.foto-perfil {
+    background-image: url(./assets/imagenes/canario.webp);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%; 
+    border: 2px solid #fff;
+
+}

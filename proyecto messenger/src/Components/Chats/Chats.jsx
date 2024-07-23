@@ -1,14 +1,19 @@
-import React from 'react'
-import '../global.css'
+import React, { useState } from 'react'
 
 
-const Chats = ({ author, content, fecha, estado }) => {
+const Chats = () => {
+
+
 return (
     <div className={`mensaje ${estado}`}>
     <div className='author'>{author}</div>
     <div className='content'>{content}</div>
-    <div className='fecha'>{fecha}</div>
+    <div className='date'>{date}</div>
     </div>
 )
 }
+
 export default Chats
+
+
+{ author, content, date, estado }
